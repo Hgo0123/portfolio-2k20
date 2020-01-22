@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC|Six+Caps&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald:300&display=swap");
+
+#load {
+  width: 100vw;
+  height: 60vh;
+  font-size: 52px;
+  text-shadow: 1px 1px 10px pink;
+  font-family: "Bowlby One SC", cursive;
+  text-align: center;
+  margin-top: 300px;
+  .load__text {
+    text-shadow: none;
+    height: 70vh;
+    font-size: 42px;
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    line-height: 150%;
+  }
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Bowlby One SC", cursive;
+  font-size: 18px;
+  letter-spacing: 3px;
+  margin-top: 40px;
+
+  .name {
+    padding-bottom: 5px;
+    margin-left: 100px;
+    border-bottom: 1px solid black;
+    &:hover {
+      border-bottom: 1px solid white;
+    }
+  }
+  .about {
+    display: flex;
+    justify-content: space-around;
+    :first-child,
+    :last-child {
+      margin-right: 100px;
+      border-bottom: 1px solid black;
+      &:hover {
+        border-bottom: 1px solid white;
+        cursor: pointer;
+      }
+    }
+  }
+}
