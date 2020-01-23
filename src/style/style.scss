@@ -1,39 +1,52 @@
 @import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC|Six+Caps&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap");
 
 #load {
   width: 100vw;
-  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
   font-size: 52px;
-  text-shadow: 1px 1px 10px pink;
+  margin-top: 70px;
   font-family: "Bowlby One SC", cursive;
-  text-align: center;
-  margin-top: 250px;
-  .load__text {
-    text-shadow: none;
-    height: 70vh;
-    font-size: 42px;
-    font-family: "Oswald", sans-serif;
-    display: flex;
-    margin-top: 20px;
-    flex-direction: column;
-    line-height: 150%;
-  }
+  text-shadow: 1px 1px 10px pink;
 }
 nav {
   display: flex;
   justify-content: space-between;
-  font-family: "Bowlby One SC", cursive;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   letter-spacing: 3px;
   margin-top: 40px;
+  height: 28px;
 
   .name {
-    padding-bottom: 5px;
+    margin-top: 10px;
     margin-left: 100px;
-    border-bottom: 1px solid black;
-    &:hover {
-      border-bottom: 1px solid white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 120%;
+    .line {
+      position: relative;
+      width: 11em;
+      height: 32px;
+      margin: 0 auto;
+      border-right: 2px solid white;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(-50%);
+    }
+    .anim-typewriter {
+      animation: typewriter 3s steps(40) 0.5s normal both;
+    }
+    @keyframes typewriter {
+      from {
+        width: 0;
+      }
+      to {
+        width: 11em;
+      }
     }
   }
   .about {
@@ -41,6 +54,7 @@ nav {
     justify-content: space-around;
     :first-child,
     :last-child {
+      padding-bottom: -20px;
       margin-right: 100px;
       border-bottom: 1px solid black;
       &:hover {

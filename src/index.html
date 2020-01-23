@@ -7,31 +7,24 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style/reset.css" />
     <link rel="stylesheet" href="style/style.scss" />
+    <link rel="icon" type="image/png" href="asset/signe.png" />
     <script defer src="js/app.js"></script>
   </head>
   <body>
-    <div id="load">
+    <section id="load">
       <h1>WELCOME.</h1>
-      <section class="load__text">
-        <p>I'm Hugo Cordillot</p>
-        <p>a french student developper, looking for an internship.</p>
-      </section>
-    </div>
-    <div class="content">
+    </section>
+    <main class="content">
       <nav>
         <div class="name">
-          Hugo Cordillot
+          <p class="line anim-typewriter">Hugo Cordillot</p>
         </div>
         <div class="about">
-          <div>
-            About
-          </div>
-          <div>
-            Contact
-          </div>
+          <p>about</p>
+          <p>contact</p>
         </div>
       </nav>
-    </div>
+    </main>
 
     <script
       type="text/javascript"
@@ -40,7 +33,7 @@
     <script type="text/javascript">
       $(document).ready(function() {
         $(".content").css("display", "none");
-        $("#load").fadeOut(4000, function() {
+        $("#load").fadeOut(1000, function() {
           $(".content").fadeIn(1000);
         });
       });
