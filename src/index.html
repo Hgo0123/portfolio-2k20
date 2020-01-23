@@ -12,7 +12,7 @@
   </head>
   <body>
     <section id="load">
-      <h1>WELCOME.</h1>
+      <h1 class="glitch" data-text="WELCOME.">WELCOME.</h1>
     </section>
     <main class="content">
       <nav>
@@ -33,7 +33,7 @@
     <script type="text/javascript">
       $(document).ready(function() {
         $(".content").css("display", "none");
-        $("#load").fadeOut(2000, function() {
+        $("#load").fadeOut(3000, function() {
           $(".content").fadeIn(1000);
         });
       });
