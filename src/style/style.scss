@@ -61,7 +61,7 @@ nav {
     margin-left: 140px;
     font-family: "Montserrat", sans-serif;
     font-size: 120%;
-    .line {
+    .name--anim {
       position: relative;
       width: 11em;
       height: 32px;
@@ -156,6 +156,7 @@ nav {
     position: relative;
     display: inline-block;
   }
+
   // .pres__text--rotate::after {
   //   content: "";
   //   width: 60%;
