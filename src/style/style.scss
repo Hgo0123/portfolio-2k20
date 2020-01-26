@@ -115,14 +115,14 @@ nav {
       cursor: pointer;
       &::after {
         opacity: 0;
-        animation: reduc 1s;
+        animation: reduc 0.5s;
       }
     }
     .about--contact:hover {
       cursor: pointer;
       &::after {
         opacity: 0;
-        animation: reduc 1s;
+        animation: reduc 0.5s;
       }
     }
   }
