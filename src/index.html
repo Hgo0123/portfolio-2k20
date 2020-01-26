@@ -14,16 +14,24 @@
     <section id="load">
       <h1 class="glitch" data-text="WELCOME.">WELCOME.</h1>
     </section>
+
     <main class="content">
       <nav>
         <div class="name">
           <p class="line anim-typewriter">Hugo Cordillot</p>
         </div>
         <div class="about">
-          <p>about</p>
-          <p>contact</p>
+          <div class="about--about"><p>about</p></div>
+          <div class="about--contact"><p>contact</p></div>
         </div>
       </nav>
+      <section class="pres">
+        <div class="pres__text">
+          <p>i'm hugo cordillot</p>
+          <p>a front end developer</p>
+          <p>looking for an <span class="pres__text--rotate"></span></p>
+        </div>
+      </section>
     </main>
 
     <script
@@ -33,7 +41,7 @@
     <script type="text/javascript">
       $(document).ready(function() {
         $(".content").css("display", "none");
-        $("#load").fadeOut(3000, function() {
+        $("#load").fadeOut(1000, function() {
           $(".content").fadeIn(1000);
         });
       });

@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC|Six+Caps&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
+
 $steps: 60;
+$primaryColor: #222222;
 
 #load {
   width: 100vw;
@@ -41,6 +43,9 @@ $steps: 60;
     }
   }
 }
+.content {
+  height: 100vh;
+}
 
 nav {
   display: flex;
@@ -53,7 +58,7 @@ nav {
 
   .name {
     margin-top: 10px;
-    margin-left: 100px;
+    margin-left: 140px;
     font-family: "Montserrat", sans-serif;
     font-size: 120%;
     .line {
@@ -81,17 +86,85 @@ nav {
   .about {
     display: flex;
     justify-content: space-around;
-    :first-child,
-    :last-child {
+    .about--about,
+    .about--contact {
       padding-bottom: -20px;
-      margin-right: 100px;
-      border-bottom: 1px solid black;
-      &:hover {
-        border-bottom: 1px solid white;
-        cursor: pointer;
+      margin-right: 70px;
+      display: inline-block;
+      position: relative;
+    }
+    .about--about::after {
+      content: "";
+      width: 50%;
+      height: 1px;
+      position: absolute;
+      bottom: 3px;
+      left: 25%;
+      background-color: $primaryColor;
+    }
+    .about--contact::after {
+      content: "";
+      width: 50%;
+      height: 1px;
+      position: absolute;
+      bottom: 3px;
+      left: 25%;
+      background-color: $primaryColor;
+    }
+    .about--about:hover {
+      cursor: pointer;
+      &::after {
+        opacity: 0;
+        animation: reduc 1s;
+      }
+    }
+    .about--contact:hover {
+      cursor: pointer;
+      &::after {
+        opacity: 0;
+        animation: reduc 1s;
       }
     }
   }
+}
+@keyframes reduc {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.pres {
+  width: 100vw;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .pres__text {
+    width: 615px;
+    font-family: "Bebas Neue", cursive;
+    line-height: 135%;
+    letter-spacing: 0.135em;
+    font-size: 44px;
+    color: $primaryColor;
+  }
+  .pres__text--rotate {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    position: relative;
+    display: inline-block;
+  }
+  // .pres__text--rotate::after {
+  //   content: "";
+  //   width: 60%;
+  //   height: 1px;
+  //   position: absolute;
+  //   bottom: 3px;
+  //   left: 20%;
+  //   background-color: #222222;
+  // }
 }
 
 @keyframes glitch-effect {
