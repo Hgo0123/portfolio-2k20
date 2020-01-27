@@ -47,7 +47,7 @@ $primaryColor: #222222;
   height: 100vh;
 }
 
-nav {
+.nav__horizontal {
   display: flex;
   justify-content: space-between;
   font-family: "Montserrat", sans-serif;
@@ -167,6 +167,43 @@ nav {
   //   left: 20%;
   //   background-color: #222222;
   // }
+}
+
+.nav__vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  .nav__vertical--safe,
+  .nav__vertical--beer,
+  .nav__vertical--nespresso {
+    position: absolute;
+    transform: rotate(-90deg);
+    padding: 5px;
+  }
+  .nav__vertical--safe:hover,
+  .nav__vertical--beer:hover,
+  .nav__vertical--nespresso:hover {
+    cursor: pointer;
+  }
+  .nav__vertical--safe {
+    top: 30%;
+  }
+  .nav__vertical--beer {
+    top: 55%;
+  }
+  .nav__vertical--nespresso {
+    top: 80%;
+  }
+}
+@keyframes border {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes glitch-effect {
