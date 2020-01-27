@@ -145,8 +145,9 @@ nav {
   .pres__text {
     width: 615px;
     font-family: "Bebas Neue", cursive;
-    line-height: 135%;
+    line-height: 150%;
     letter-spacing: 0.135em;
+    text-shadow: 2px 3px 2px rgb(201, 199, 199, 0.5);
     font-size: 44px;
     color: $primaryColor;
   }
