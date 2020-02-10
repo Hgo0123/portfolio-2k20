@@ -1,215 +1,33 @@
 @import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC|Six+Caps&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap");
 
-$steps: 60;
-$primaryColor: #222222;
+@import "_variables.scss";
+@import "_project.scss";
+@import "_loading.scss";
+@import "_hero.scss";
+@import "_nav.scss";
+@import "_animations.scss";
 
-#load {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70vh;
-  margin-top: 70px;
-  h1 {
-    position: relative;
-    text-shadow: 1px 4px 10px pink;
-    font-family: "Bowlby One SC", cursive;
-    font-size: 62px;
-    &::before,
-    &::after {
-      content: attr(data-text);
-      position: absolute;
-      top: 0;
-      left: 9;
-      right: 0;
-      overflow: hidden;
-      background: white;
-      color: black;
-      clip: rect(0, 900px, 0, 0);
-    }
-    &::before {
-      left: 50px;
-
-      text-shadow: 1px 0 green;
-      animation: glitch-effect 3s infinite linear alternate-reverse;
-    }
-
-    &::after {
-      left: 3px;
-      text-shadow: -1px 0 red;
-      animation: glitch-effect 3s infinite linear alternate-reverse;
-    }
-  }
-}
-.content {
-  height: 100vh;
+p,
+h4 {
+  font-family: "Montserrat";
+  color: $primaryColor;
 }
 
-.nav__horizontal {
-  display: flex;
-  justify-content: space-between;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  letter-spacing: 3px;
-  margin-top: 40px;
-  height: 28px;
-
-  .name {
-    margin-top: 10px;
-    margin-left: 100px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 120%;
-    .name--anim {
-      position: relative;
-      width: 11em;
-      height: 32px;
-      margin: 0 auto;
-      border-right: 2px solid white;
-      white-space: nowrap;
-      overflow: hidden;
-      transform: translateY(-50%);
-    }
-    .anim-typewriter {
-      animation: typewriter 3s steps(40) 0.5s normal both;
-    }
-    @keyframes typewriter {
-      from {
-        width: 0;
-      }
-      to {
-        width: 11em;
-      }
-    }
-  }
-  .about {
-    display: flex;
-    justify-content: space-around;
-    .about--about,
-    .about--contact {
-      padding-bottom: -20px;
-      margin-right: 70px;
-      display: inline-block;
-      position: relative;
-    }
-    .about--about::after {
-      content: "";
-      width: 50%;
-      height: 1px;
-      position: absolute;
-      bottom: 3px;
-      left: 25%;
-      background-color: $primaryColor;
-    }
-    .about--contact::after {
-      content: "";
-      width: 50%;
-      height: 1px;
-      position: absolute;
-      bottom: 3px;
-      left: 25%;
-      background-color: $primaryColor;
-    }
-    .about--about:hover {
-      cursor: pointer;
-      &::after {
-        opacity: 0;
-        animation: reduc 0.5s;
-      }
-    }
-    .about--contact:hover {
-      cursor: pointer;
-      &::after {
-        opacity: 0;
-        animation: reduc 0.5s;
-      }
-    }
-  }
-}
-@keyframes reduc {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-.pres {
-  width: 100vw;
-  height: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .pres__text {
-    width: 615px;
-    font-family: "Bebas Neue", cursive;
-    line-height: 150%;
-    letter-spacing: 0.135em;
-    text-shadow: 2px 3px 2px rgb(201, 199, 199, 0.5);
-    font-size: 44px;
-    color: $primaryColor;
-  }
-  .pres__text--rotate {
-    font-family: "Montserrat", sans-serif;
-    font-size: 28px;
-    position: relative;
-    display: inline-block;
-  }
-
-  // .pres__text--rotate::after {
-  //   content: "";
-  //   width: 60%;
-  //   height: 1px;
-  //   position: absolute;
-  //   bottom: 3px;
-  //   left: 20%;
-  //   background-color: #222222;
-  // }
-}
-
-.nav__vertical {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  font-size: 12px;
-  font-family: "Montserrat", sans-serif;
-  .nav__vertical--safe,
-  .nav__vertical--beer,
-  .nav__vertical--nespresso {
-    position: absolute;
-    transform: rotate(-90deg);
-    padding: 5px;
-  }
-  .nav__vertical--safe:hover,
-  .nav__vertical--beer:hover,
-  .nav__vertical--nespresso:hover {
-    cursor: pointer;
-  }
-  .nav__vertical--safe {
-    top: 30%;
-  }
-  .nav__vertical--beer {
-    top: 55%;
-  }
-  .nav__vertical--nespresso {
-    top: 80%;
-  }
-}
-@keyframes border {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes glitch-effect {
-  @for $i from 0 through $steps {
-    #{percentage($i*(1/$steps))} {
-      clip: rect(random(100) + px, 9999px, random(100) + px, 0);
-    }
-  }
-}
+// .project {
+//   display: flex;
+//   flex-wrap: nowrap;
+//   overflow-x: auto;
+//   width: calc(auto + 50px);
+//   .project__card {
+//     flex: 0 0 auto;
+//     width: 80vw;
+//     height: 80vh;
+//     border: 1px solid black;
+//     border-radius: 10px;
+//     margin: 20px 50px 50px 50px;
+//     padding-right: 100px;
+//   }
+// }

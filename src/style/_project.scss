@@ -1,0 +1,79 @@
+.sale-temps {
+  display: grid;
+  grid-template-columns: 50% 30% 1fr;
+  grid-template-rows: 100px repeat(2, 1fr);
+  grid-gap: 20px;
+  height: 90vh;
+  width: 90%;
+  margin: auto;
+  &__title {
+    grid-area: 1 / 1 / 2 / 2;
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 34px;
+    margin-left: 60px;
+    align-self: center;
+    color: $primaryColor;
+    img {
+      margin-left: 10px;
+    }
+  }
+  &__image {
+    grid-area: 2 / 1 / 4 / 2;
+    position: relative;
+    &:hover {
+      .image__img {
+        filter: blur(2px);
+        transition: 0.3s filter linear;
+      }
+      .image__details {
+        opacity: 1;
+        filter: none;
+        &::after {
+          content: "";
+          width: 70%;
+          height: 1px;
+          background-color: $primaryColor;
+          position: absolute;
+          bottom: -3px;
+          left: 15%;
+        }
+      }
+    }
+    .image__img {
+      background-image: url("../asset/laptop.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 50%;
+      height: 100%;
+      width: 100%;
+    }
+    .image__details {
+      opacity: 0;
+      display: flex;
+      position: absolute;
+      top: 42%;
+      left: 38%;
+      font-size: 20px;
+      color: $primaryColor;
+      cursor: pointer;
+    }
+  }
+  &__text {
+    grid-area: 2 / 2 / 3 / 3;
+    align-self: center;
+  }
+  &__details {
+    grid-area: 3 / 2 / 4 / 3;
+    .details__team {
+      margin-bottom: 15px;
+    }
+    p,
+    h4 {
+      margin-bottom: 10px;
+    }
+  }
+  &__svg {
+    grid-area: 2 / 3 / 4 / 4;
+    align-self: center;
+  }
+}

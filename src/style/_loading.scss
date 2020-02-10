@@ -1,0 +1,46 @@
+#load {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  margin-top: 70px;
+  h1 {
+    position: relative;
+    text-shadow: 1px 4px 10px pink;
+    font-family: "Bowlby One SC", cursive;
+    font-size: 62px;
+    &::before,
+    &::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 9;
+      right: 0;
+      overflow: hidden;
+      background: white;
+      color: black;
+      clip: rect(0, 900px, 0, 0);
+    }
+    &::before {
+      left: 50px;
+
+      text-shadow: 1px 0 green;
+      animation: glitch-effect 3s infinite linear alternate-reverse;
+    }
+
+    &::after {
+      left: 3px;
+      text-shadow: -1px 0 red;
+      animation: glitch-effect 3s infinite linear alternate-reverse;
+    }
+  }
+}
+
+@keyframes glitch-effect {
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(100) + px, 9999px, random(100) + px, 0);
+    }
+  }
+}

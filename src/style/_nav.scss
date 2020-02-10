@@ -1,0 +1,117 @@
+.nav__horizontal {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  letter-spacing: 3px;
+  margin-top: 40px;
+  height: 28px;
+
+  .name {
+    margin-top: 10px;
+    margin-left: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 120%;
+    .name--anim {
+      position: relative;
+      width: 11em;
+      height: 32px;
+      margin: 0 auto;
+      border-right: 2px solid white;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(-50%);
+    }
+    .anim-typewriter {
+      animation: typewriter 3s steps(40) 0.5s normal both;
+    }
+    @keyframes typewriter {
+      from {
+        width: 0;
+      }
+      to {
+        width: 11em;
+      }
+    }
+  }
+  .about {
+    display: flex;
+    justify-content: space-around;
+    .about--about,
+    .about--contact {
+      padding-bottom: -20px;
+      margin-right: 70px;
+      display: inline-block;
+      position: relative;
+    }
+    .about--about::after {
+      content: "";
+      width: 50%;
+      height: 1px;
+      position: absolute;
+      bottom: 3px;
+      left: 25%;
+      background-color: $primaryColor;
+    }
+    .about--contact::after {
+      content: "";
+      width: 50%;
+      height: 1px;
+      position: absolute;
+      bottom: 3px;
+      left: 25%;
+      background-color: $primaryColor;
+    }
+    .about--about:hover {
+      cursor: pointer;
+      &::after {
+        opacity: 0;
+        animation: reduc 0.5s;
+      }
+    }
+    .about--contact:hover {
+      cursor: pointer;
+      &::after {
+        opacity: 0;
+        animation: reduc 0.5s;
+      }
+    }
+  }
+}
+@keyframes reduc {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+// .nav__vertical {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-around;
+//     font-size: 12px;
+//     font-family: "Montserrat", sans-serif;
+//     .nav__vertical--safe,
+//     .nav__vertical--beer,
+//     .nav__vertical--nespresso {
+//       position: absolute;
+//       transform: rotate(-90deg);
+//       padding: 5px;
+//     }
+//     .nav__vertical--safe:hover,
+//     .nav__vertical--beer:hover,
+//     .nav__vertical--nespresso:hover {
+//       cursor: pointer;
+//     }
+//     .nav__vertical--safe {
+//       top: 30%;
+//     }
+//     .nav__vertical--beer {
+//       top: 55%;
+//     }
+//     .nav__vertical--nespresso {
+//       top: 80%;
+//     }
+//   }

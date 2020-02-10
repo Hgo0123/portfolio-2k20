@@ -1,0 +1,23 @@
+.pres {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .pres__text {
+    font-family: "Bebas Neue", cursive;
+    line-height: 150%;
+    letter-spacing: 0.135em;
+    text-shadow: 2px 3px 2px rgb(201, 199, 199, 0.5);
+    font-size: 44px;
+    color: $primaryColor;
+  }
+  .pres__text--rotate {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    position: relative;
+    display: inline-block;
+    width: 300px;
+  }
+}
