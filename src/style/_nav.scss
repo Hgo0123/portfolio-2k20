@@ -23,15 +23,7 @@
       transform: translateY(-50%);
     }
     .anim-typewriter {
-      animation: typewriter 3s steps(40) 0.5s normal both;
-    }
-    @keyframes typewriter {
-      from {
-        width: 0;
-      }
-      to {
-        width: 11em;
-      }
+      animation: typewriter 1.5s steps(40) 0.5s normal both;
     }
   }
   .about {
@@ -76,14 +68,6 @@
         animation: reduc 0.5s;
       }
     }
-  }
-}
-@keyframes reduc {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
   }
 }
 

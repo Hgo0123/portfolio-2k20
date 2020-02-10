@@ -1,9 +1,28 @@
+// after nav bar
+@keyframes reduc {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+// typewriter name
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 11em;
+  }
+}
+
+// SVG
 @keyframes draw {
   from {
     stroke-dashoffset: 0%;
   }
 }
-
 .svg {
   & path {
     stroke-dasharray: 600;
