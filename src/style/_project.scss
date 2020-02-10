@@ -64,6 +64,10 @@
   }
   &__details {
     grid-area: 3 / 2 / 4 / 3;
+    h4 {
+      font-size: 18px;
+      font-weight: bold;
+    }
     .details__team {
       margin-bottom: 15px;
     }
@@ -75,5 +79,6 @@
   &__svg {
     grid-area: 2 / 3 / 4 / 4;
     align-self: center;
+    margin-top: 150px;
   }
 }
