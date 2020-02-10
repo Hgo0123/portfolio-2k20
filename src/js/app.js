@@ -1,4 +1,4 @@
-var keywords = ["apprenticeship", "internship"];
+var keywords = ["internship", "apprenticeship"];
 
 var count = 0;
 var span = document.querySelector(".pres__text--rotate");
@@ -9,4 +9,4 @@ setInterval(function() {
   if (count === keywords.length) {
     count = 0;
   }
-}, 3000);
+}, 2000);

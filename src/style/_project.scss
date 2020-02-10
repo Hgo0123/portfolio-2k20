@@ -9,9 +9,9 @@
   &__title {
     grid-area: 1 / 1 / 2 / 2;
     font-family: "Cedarville Cursive", cursive;
-    font-size: 34px;
+    font-size: 42px;
     margin-left: 60px;
-    align-self: center;
+    align-self: flex-end;
     color: $primaryColor;
     img {
       margin-left: 10px;
@@ -23,10 +23,12 @@
     &:hover {
       .image__img {
         filter: blur(2px);
-        transition: 0.3s filter linear;
+        transition: filter 0.5s linear;
       }
       .image__details {
+        transition: opacity 1s;
         opacity: 1;
+
         filter: none;
         &::after {
           content: "";
@@ -51,9 +53,10 @@
       opacity: 0;
       display: flex;
       position: absolute;
-      top: 42%;
+      top: 35%;
       left: 38%;
       font-size: 20px;
+      font-style: italic;
       color: $primaryColor;
       cursor: pointer;
     }
@@ -61,8 +64,10 @@
   &__text {
     grid-area: 2 / 2 / 3 / 3;
     align-self: center;
+    margin-left: 20px;
   }
   &__details {
+    margin-left: 20px;
     grid-area: 3 / 2 / 4 / 3;
     h4 {
       font-size: 18px;
