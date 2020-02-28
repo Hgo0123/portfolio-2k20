@@ -20,17 +20,9 @@ window.addEventListener("scroll", function() {
   pres.style.opacity = coefop - window.pageYOffset + "%";
 });
 
-setInterval(() => {
-  console.log(window.pageYOffset);
-}, 1000);
-
 $(document).ready(function() {
-  //   $(".content").css("display", "none");
-  //   $("#load").fadeOut(1000, function() {
-  //     $(".content").fadeIn(1000);
-  //   });
-  // $(".pres__check").on("click", function() {
-  //   $(".pres").slideUp(1000);
-  //   $(".nav__horizontal").slideUp(1000);
-  // });
+  $(".content").css("display", "none");
+  $("#load").fadeOut(2000, function() {
+    $(".content").fadeIn(1000);
+  });
 });
