@@ -11,12 +11,13 @@
     line-height: 150%;
     letter-spacing: 0.135em;
     text-shadow: 2px 3px 2px rgb(201, 199, 199, 0.5);
-    font-size: 44px;
+    font-size: 50px;
     color: $primaryColor;
+    margin-top: 150px;
   }
   .pres__text--rotate {
     font-family: "Montserrat", sans-serif;
-    font-size: 28px;
+    font-size: 32px;
     position: relative;
     display: inline-block;
     width: 300px;
@@ -25,5 +26,12 @@
     font-size: 18px;
     transform: translate(-50%, -50%);
     margin-top: 150px;
+    cursor: pointer;
+    svg {
+      width: 50px;
+      transform: rotate(90deg);
+      display: flex;
+      margin-left: 30%;
+    }
   }
 }

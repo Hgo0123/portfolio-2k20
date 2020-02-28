@@ -10,10 +10,16 @@
 @import "_nav.scss";
 @import "_animations.scss";
 
+html {
+  scroll-behavior: smooth;
+}
 p,
 h4 {
   font-family: "Montserrat";
   color: $primaryColor;
+}
+a {
+  text-decoration: none;
 }
 
 // .project {

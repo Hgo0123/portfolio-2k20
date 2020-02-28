@@ -19,14 +19,22 @@
 
 // SVG
 @keyframes draw {
-  from {
-    stroke-dashoffset: 0%;
+  to {
+    stroke-dashoffset: 0;
   }
 }
 .svg {
-  & path {
-    stroke-dasharray: 600;
-    stroke-dashoffset: 650;
-    animation: draw 3s linear infinite alternate;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 650;
+  animation: draw 3s linear infinite alternate;
+}
+@keyframes lineSvg {
+  to {
+    stroke-dashoffset: 0;
   }
+}
+line {
+  stroke-dasharray: 350;
+  stroke-dashoffset: 350;
+  animation: lineSvg 1s linear infinite alternate;
 }
