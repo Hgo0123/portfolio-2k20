@@ -145,6 +145,38 @@
     justify-content: space-around;
     align-items: center;
     height: 70%;
+    .sale_temps__img1,
+    .sale_temps__img2,
+    .sale_temps__img3 {
+      width: 400px;
+      height: 228px;
+      background-position: center;
+    }
+    .sale_temps__img1 {
+      background-image: url(../asset/sale_temps/custom_1.png);
+    }
+    .sale_temps__img2 {
+      background-image: url(../asset/sale_temps/custom_2.png);
+    }
+    .sale_temps__img3 {
+      background-image: url(../asset/sale_temps/custom_3.png);
+    }
+    .bof__img1,
+    .bof__img2,
+    .bof__img3 {
+      width: 400px;
+      height: 228px;
+      background-position: center;
+    }
+    .bof__img1 {
+      background-image: url(../asset/beersofwar/play1.png);
+    }
+    .bof__img2 {
+      background-image: url(../asset/beersofwar/play2.png);
+    }
+    .bof__img3 {
+      background-image: url(../asset/beersofwar/play3.png);
+    }
   }
 }
 // Beers Of Wars
