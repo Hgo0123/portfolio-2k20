@@ -10,6 +10,7 @@
 @import "_hero.scss";
 @import "_nav.scss";
 @import "_animations.scss";
+@import "footer.scss";
 
 html {
   scroll-behavior: smooth;
@@ -22,19 +23,3 @@ h4 {
 a {
   text-decoration: none;
 }
-
-// .project {
-//   display: flex;
-//   flex-wrap: nowrap;
-//   overflow-x: auto;
-//   width: calc(auto + 50px);
-//   .project__card {
-//     flex: 0 0 auto;
-//     width: 80vw;
-//     height: 80vh;
-//     border: 1px solid black;
-//     border-radius: 10px;
-//     margin: 20px 50px 50px 50px;
-//     padding-right: 100px;
-//   }
-// }
