@@ -38,3 +38,14 @@ line {
   stroke-dashoffset: 350;
   animation: lineSvg 1s linear infinite alternate;
 }
+
+// BEER
+
+@keyframes turn {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

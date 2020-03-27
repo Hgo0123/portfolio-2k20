@@ -15,9 +15,9 @@
     <script defer src="js/app.js"></script>
   </head>
   <body>
-    <section id="load">
+    <!-- <section id="load">
       <h1 class="glitch" data-text="WELCOME.">WELCOME.</h1>
-    </section>
+    </section> -->
 
     <main class="content">
       <nav class="nav__horizontal">
@@ -29,17 +29,6 @@
           <div class="about--contact"><p>contact</p></div>
         </div>
       </nav>
-      <!-- <nav class="nav__vertical">
-        <div class="nav__vertical--safe">
-          <p>Safe Patch +</p>
-        </div>
-        <div class="nav__vertical--beer">
-          <p>Beers of War</p>
-        </div>
-        <div class="nav__vertical--nespresso">
-          <p>Nespresso</p>
-        </div>
-      </nav> -->
       <section class="pres">
         <div class="pres__text">
           <p>I'm Hugo Cordillot</p>
@@ -78,8 +67,13 @@
 
       <section class="project__sale-temps sale-temps" id="sale-temps">
         <div class="sale-temps__title">
-          <h1>sale temps<img src="asset/dots.png" alt="dots" /></h1>
+          <h1>sale temps<img src="asset/sale_temps/dots.png" alt="dots" /></h1>
         </div>
+        <img
+          src="asset/sale_temps/Vector.png"
+          alt="tache de peinture"
+          class="tache"
+        />
         <div class="sale-temps__image image">
           <div class="image__img"></div>
           <a
@@ -133,6 +127,141 @@
               stroke-linejoin="round"
             />
           </svg>
+        </div>
+      </section>
+      <section class="folio">
+        <div class="folio__container">
+          <div class="folio__title">
+            <h4>
+              Parcours de personnalisation
+              <div class="square"></div>
+            </h4>
+          </div>
+          <div class="folio__image">
+            <img src="asset/sale_temps/custom_1.png" alt="page_custom1" />
+            <img src="asset/sale_temps/custom_2.png" alt="page_custom2" />
+            <img src="asset/sale_temps/custom_3.png" alt="page_custom3" />
+          </div>
+        </div>
+      </section>
+
+      <section class="project__beersofwar beersofwar" id="beersofwar">
+        <div class="beersofwar__title">
+          <h1>BEERS OF WAR</h1>
+        </div>
+        <div class="beersofwar__image image">
+          <div class="image__img"></div>
+          <a
+            href="https://beersofwar.netlify.com/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p class="image__details">View website</p></a
+          >
+        </div>
+        <div class="beersofwar__text">
+          <p>
+            This project is a game in pure JavaScript In one week we have to
+            make a game on the theme of the after.
+          </p>
+          <br />
+          <p>
+            We choose to make this game on the after-work drink of Friday.
+          </p>
+          <br />
+          <p>
+            In this game you have to touch the table who appear with the beer,
+            but be careful because when the happy hour goes off the bar fills up
+            and obstacles appear.
+          </p>
+        </div>
+        <div class="beersofwar__details details">
+          <div class="details__team">
+            <h4>Team</h4>
+            <p>Louis Fleury</p>
+            <p>Yoan Bensihmon</p>
+            <p>Hugo Cordillot</p>
+          </div>
+          <div class="details__date">
+            <h4>Date</h4>
+            <p>6 january - 10 january 2020</p>
+          </div>
+        </div>
+        <div class="beersofwar__beer">
+          <img src="asset/beersofwar/beer.png" alt="beer" />
+        </div>
+      </section>
+      <section class="folio">
+        <div class="folio__container">
+          <div class="folio__title">
+            <h4>
+              Play game
+            </h4>
+          </div>
+          <div class="folio__image">
+            <img src="asset/beersofwar/play1.png" alt="playgame1" />
+            <img src="asset/beersofwar/play2.png" alt="game-over" />
+            <img src="asset/beersofwar/play3.png" alt="credit-page" />
+          </div>
+        </div>
+      </section>
+
+      <section class="project__safepatch safepatch" id="safepatch">
+        <div class="safepatch__title title">
+          <h1>Safe Patch<span class="title__cross">+</span></h1>
+        </div>
+        <div class="safepatch__image image">
+          <div class="image__img"></div>
+          <a
+            href="https://hetic-w1p2022-10.netlify.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p class="image__details">View website</p></a
+          >
+        </div>
+        <div class="safepatch__text">
+          <p>
+            We had to invent an innovative product.
+          </p>
+          <br />
+          <p>we chose a public utility product related to health</p>
+          <p>
+            in few words is a Patch connected to the health and rescue service,
+            who which helps the care of the victim during the arrival of help
+          </p>
+          <br />
+          <p>We had one week to go forwards this project.</p>
+        </div>
+        <div class="safepatch__details details">
+          <div class="details__team">
+            <h4>Team</h4>
+            <p>Tania Abitbol</p>
+            <p>Thomas Ceglie</p>
+            <p>Romain Danizel</p>
+            <p>Laurent Dashwood</p>
+            <p>Hugo Cordillot</p>
+          </div>
+          <div class="details__date">
+            <h4>Date</h4>
+            <p>25 November - 29 November 2019</p>
+          </div>
+        </div>
+      </section>
+      <section class="folio">
+        <div class="folio__container">
+          <div class="folio__title--safe">
+            <h4>Different pages <span class="cross">+</span></h4>
+          </div>
+          <div class="folio__image">
+            <img
+              src="asset/safe_patch/safepatch-video.gif"
+              alt="safe_patch.gif"
+              class="gif"
+            />
+            <!-- <img src="asset/beersofwar/play2.png" alt="game-over" />
+            <img src="asset/beersofwar/play3.png" alt="credit-page" /> -->
+          </div>
         </div>
       </section>
     </main>
