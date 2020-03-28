@@ -7,7 +7,6 @@
   grid-gap: 40px;
   width: 90%;
   margin: auto;
-
   @include x-small {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -16,12 +15,12 @@
   }
   @include xx-small {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 50px 400px 450px;
+    grid-template-rows: 50px 300px 450px;
   }
 
   .tache {
     position: absolute;
-    left: 0;
+    left: 0px;
   }
   &__title {
     grid-area: 1 / 1 / 2 / 2;
@@ -51,6 +50,7 @@
     }
     @include xx-small {
       grid-area: 2 / 1 / 3 / 3;
+      margin-top: 10%;
     }
     position: relative;
     &:hover {
@@ -167,7 +167,7 @@
       font-family: "Cedarville Cursive", cursive;
       font-size: 38px;
       @include xx-small {
-        font-size: 26px;
+        font-size: 23px;
       }
       color: $primaryColor;
       padding: 5% 0% 5% 0%;

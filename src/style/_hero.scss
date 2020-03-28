@@ -21,22 +21,25 @@
     flex-direction: column;
     @include medium {
       align-items: center;
-
       p {
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
       }
     }
     @include xx-small {
       align-items: flex-start;
       margin-top: 50px;
       text-align: center;
+      font-size: 28px;
+      width: 80%;
+      line-height: 150%;
     }
   }
   .pres__text--rotate {
     font-family: "Montserrat", sans-serif;
-    font-size: 32px;
+    font-size: 26px;
     position: relative;
     display: inline-block;
     width: 300px;
