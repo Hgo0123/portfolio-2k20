@@ -26,7 +26,6 @@
         </div>
         <div class="about">
           <div class="about--about"><p>about</p></div>
-          <div class="about--contact"><p>contact</p></div>
         </div>
       </nav>
       <section class="pres">
@@ -172,11 +171,8 @@
             We choose to make this game on the after-work drink of Friday.
           </p>
           <br />
-          <p>
-            In this game you have to touch the table who appear with the beer,
-            but be careful because when the happy hour goes off the bar fills up
-            and obstacles appear.
-          </p>
+          <p>Let's play !</p>
+          <br />
         </div>
         <div class="beersofwar__details details">
           <div class="details__team">
@@ -199,15 +195,13 @@
           <div class="folio__title">
             <h4>
               Play game
+              <div class="square square--bof"></div>
             </h4>
           </div>
           <div class="folio__image bof">
             <div class="bof__img1"></div>
             <div class="bof__img2"></div>
             <div class="bof__img3"></div>
-            <!-- <img src="asset/beersofwar/play1.png" alt="playgame1" />
-            <img src="asset/beersofwar/play2.png" alt="game-over" />
-            <img src="asset/beersofwar/play3.png" alt="credit-page" /> -->
           </div>
         </div>
       </section>
@@ -256,12 +250,16 @@
       </section>
       <section class="folio">
         <div class="folio__container">
-          <div class="folio__title--safe">
+          <div class="folio__title">
             <h4>Different pages <span class="cross">+</span></h4>
           </div>
           <div class="folio__image">
             <img
-              src="asset/safe_patch/safepatch-video.gif"
+              srcset="
+                asset/safe_patch/safepatch-videomin.gif 300w,
+                asset/safe_patch/safepatch-video.gif    600w
+              "
+              sizes="70vw"
               alt="safe_patch.gif"
               class="gif"
             />

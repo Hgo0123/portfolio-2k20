@@ -1,2 +1,23 @@
 $steps: 60;
 $primaryColor: #222222;
+
+@mixin large {
+  @media (max-width: 1030px) {
+    @content;
+  }
+}
+@mixin medium {
+  @media (max-width: 935px) {
+    @content;
+  }
+}
+@mixin small {
+  @media (max-width: 730px) {
+    @content;
+  }
+}
+@mixin x-small {
+  @media (max-width: 600px) {
+    @content;
+  }
+}

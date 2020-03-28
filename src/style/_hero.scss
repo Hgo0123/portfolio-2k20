@@ -2,7 +2,7 @@
   width: 100vw;
   height: 90vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
 
@@ -11,9 +11,23 @@
     line-height: 150%;
     letter-spacing: 0.135em;
     text-shadow: 2px 3px 2px rgb(201, 199, 199, 0.5);
-    font-size: 40px;
+    font-size: 46px;
+    @media (max-width: 820px) {
+      font-size: 36px;
+    }
     color: $primaryColor;
     margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    @include medium {
+      align-items: center;
+
+      p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
   }
   .pres__text--rotate {
     font-family: "Montserrat", sans-serif;
@@ -24,7 +38,6 @@
   }
   &__check {
     font-size: 18px;
-    transform: translate(-50%, -50%);
     margin-top: 200px;
     cursor: pointer;
     svg {

@@ -6,10 +6,16 @@
   letter-spacing: 3px;
   margin-top: 40px;
   height: 28px;
+  @include x-small {
+    justify-content: space-around;
+  }
 
   .name {
     margin-top: 10px;
     margin-left: 100px;
+    @include x-small {
+      margin-left: 0px;
+    }
     font-family: "Montserrat", sans-serif;
     font-size: 120%;
     .name--anim {
@@ -24,6 +30,9 @@
     }
     .anim-typewriter {
       animation: typewriter 1.5s steps(40) 0.5s normal both;
+      @include x-small {
+        animation: none;
+      }
     }
   }
   .about {
@@ -35,6 +44,9 @@
       margin-right: 70px;
       display: inline-block;
       position: relative;
+      @include x-small {
+        margin-right: 0px;
+      }
     }
     .about--about::after {
       content: "";
