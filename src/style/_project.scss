@@ -123,11 +123,20 @@
   }
   &__svg {
     grid-area: 2 / 3 / 4 / 4;
+    .svg_small {
+      display: none;
+    }
     @include x-small {
       grid-area: 3 / 1 / 4 / 2;
       align-self: normal;
       justify-self: center;
       margin-top: 0px;
+      .svg {
+        display: none;
+      }
+      .svg_small {
+        display: block;
+      }
     }
     @include xx-small {
       grid-area: 3 / 2 / 4 / 3;
