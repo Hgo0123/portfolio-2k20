@@ -14,6 +14,10 @@
     grid-template-rows: 100px repeat(2, 1fr);
     grid-gap: 20px;
   }
+  @include xx-small {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 400px 450px;
+  }
 
   .tache {
     position: absolute;
@@ -29,7 +33,6 @@
       grid-area: 1 / 1 / 2 / 3;
       align-self: end;
       justify-self: center;
-      margin-left: 0px;
     }
     font-family: "Cedarville Cursive", cursive;
     font-size: 42px;
@@ -100,6 +103,7 @@
     }
     @include xx-small {
       grid-area: 3 / 1 / 4 / 2;
+      align-self: flex-start;
     }
   }
   &__details {
@@ -382,12 +386,6 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 100px repeat(2, 1fr);
     grid-gap: 20px;
-  }
-  @include xx-small {
-    grid-area: 1 / 1 / 2 / 3;
-    align-self: center;
-    justify-self: center;
-    margin-left: 0px;
   }
   &__title {
     grid-area: 1 / 1 / 2 / 2;
