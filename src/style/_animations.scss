@@ -23,7 +23,8 @@
     stroke-dashoffset: 0;
   }
 }
-.svg {
+.svg,
+.svg_small {
   stroke-dasharray: 600;
   stroke-dashoffset: 650;
   animation: draw 3s linear infinite alternate;
