@@ -25,6 +25,12 @@
       grid-area: 1 / 1 / 2 / 3;
       margin-left: 30px;
     }
+    @include xx-small {
+      grid-area: 1 / 1 / 2 / 3;
+      align-self: end;
+      justify-self: center;
+      margin-left: 0px;
+    }
     font-family: "Cedarville Cursive", cursive;
     font-size: 42px;
     margin-left: 60px;
@@ -39,6 +45,9 @@
     @include x-small {
       grid-area: 2 / 1 / 3 / 2;
       margin-top: 30%;
+    }
+    @include xx-small {
+      grid-area: 2 / 1 / 3 / 3;
     }
     position: relative;
     &:hover {
@@ -89,6 +98,9 @@
     p {
       line-height: 150%;
     }
+    @include xx-small {
+      grid-area: 3 / 1 / 4 / 2;
+    }
   }
   &__details {
     margin-left: 20px;
@@ -112,6 +124,10 @@
       align-self: normal;
       justify-self: center;
       margin-top: 0px;
+    }
+    @include xx-small {
+      grid-area: 3 / 2 / 4 / 3;
+      align-self: flex-end;
     }
     align-self: center;
     margin-top: 150px;
@@ -146,10 +162,14 @@
     h4 {
       font-family: "Cedarville Cursive", cursive;
       font-size: 38px;
+      @include xx-small {
+        font-size: 26px;
+      }
       color: $primaryColor;
-      display: flex;
       padding: 5% 0% 5% 0%;
-
+      width: 100%;
+      display: flex;
+      justify-content: center;
       .square {
         width: 10px;
         height: 10px;
@@ -233,11 +253,20 @@
       grid-area: 1 / 1 / 2 / 3;
       font-size: 20px;
     }
+    @include xx-small {
+      grid-area: 1 / 1 / 2 / 3;
+      align-self: end;
+      justify-self: center;
+      margin-left: 0px;
+    }
   }
   &__image {
     grid-area: 2 / 1 / 4 / 2;
     @include x-small {
       grid-area: 2 / 1 / 3 / 2;
+    }
+    @include xx-small {
+      grid-area: 2 / 1 / 3 / 3;
     }
     position: relative;
     &:hover {
@@ -288,6 +317,9 @@
     p {
       line-height: 150%;
     }
+    @include xx-small {
+      grid-area: 3 / 1 / 4 / 2;
+    }
   }
   &__details {
     margin-left: 20px;
@@ -312,6 +344,10 @@
       justify-self: center;
       margin-top: 0px;
     }
+    @include xx-small {
+      grid-area: 3 / 2 / 4 / 3;
+      align-self: flex-end;
+    }
     img {
       animation: turn 3s infinite;
       width: 120px;
@@ -323,6 +359,10 @@
       @include small {
         width: 70px;
         height: 70px;
+      }
+      @include xx-small {
+        width: 90px;
+        height: 90px;
       }
     }
   }
@@ -343,6 +383,12 @@
     grid-template-rows: 100px repeat(2, 1fr);
     grid-gap: 20px;
   }
+  @include xx-small {
+    grid-area: 1 / 1 / 2 / 3;
+    align-self: center;
+    justify-self: center;
+    margin-left: 0px;
+  }
   &__title {
     grid-area: 1 / 1 / 2 / 2;
     font-family: Helvetica;
@@ -356,6 +402,11 @@
       grid-area: 1 / 1 / 2 / 3;
       font-size: 34px;
     }
+    @include xx-small {
+      grid-area: 1 / 1 / 2 / 3;
+      align-self: end;
+      justify-self: center;
+    }
     .title__cross {
       color: #1a73e8;
       margin-left: 10px;
@@ -367,8 +418,12 @@
   &__image {
     grid-area: 2 / 1 / 4 / 2;
     position: relative;
+
     @include x-small {
-      grid-area: 2 / 1 / 4 / 2;
+      grid-area: 2 / 1 / 3 / 2;
+    }
+    @include xx-small {
+      grid-area: 2 / 1 / 3 / 3;
     }
     &:hover {
       .image__img {
@@ -417,6 +472,9 @@
     margin-left: 20px;
     p {
       line-height: 150%;
+    }
+    @include xx-small {
+      grid-area: 3 / 1 / 4 / 2;
     }
   }
   &__details {

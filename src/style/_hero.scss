@@ -28,6 +28,10 @@
         align-items: center;
       }
     }
+    @include xx-small {
+      align-items: flex-start;
+      margin-top: 50px;
+    }
   }
   .pres__text--rotate {
     font-family: "Montserrat", sans-serif;
@@ -39,6 +43,9 @@
   &__check {
     font-size: 18px;
     margin-top: 200px;
+    @include xx-small {
+      margin-top: 100px;
+    }
     cursor: pointer;
     svg {
       width: 50px;

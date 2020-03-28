@@ -21,3 +21,8 @@ $primaryColor: #222222;
     @content;
   }
 }
+@mixin xx-small {
+  @media (max-width: 400px) {
+    @content;
+  }
+}
