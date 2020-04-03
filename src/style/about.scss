@@ -1,0 +1,43 @@
+.main {
+  display: flex;
+  margin: 100px 200px 0px 200px;
+  &__image {
+    margin-right: 50px;
+  }
+  &__text {
+    text-align: justify;
+    margin-left: 50px;
+    line-height: 145%;
+    font-size: 18px;
+  }
+  .text__presentation {
+    p {
+      margin-bottom: 10px;
+    }
+  }
+  .text__contact {
+    margin-top: 100px;
+    display: flex;
+    p:first-child {
+      margin-right: 10px;
+    }
+    p:last-child {
+      margin-left: 10px;
+    }
+  }
+}
+.social {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .social__github {
+    margin-right: 10px;
+  }
+  .social__linkedin {
+    margin-left: 10px;
+  }
+}
