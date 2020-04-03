@@ -1,6 +1,12 @@
 $steps: 60;
 $primaryColor: #222222;
 
+@mixin largePlus {
+  @media (min-width: 1030px) {
+    @content;
+  }
+}
+
 @mixin large {
   @media (max-width: 1030px) {
     @content;

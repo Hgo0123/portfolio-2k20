@@ -17,6 +17,11 @@
     margin-top: 150px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    @include largePlus {
+      margin: 150px 150px 0px 150px;
+    }
     @include medium {
       align-items: center;
       p {
