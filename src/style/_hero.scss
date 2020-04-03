@@ -18,7 +18,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    @include small {
+      transform: none !important;
+    }
     @include largePlus {
       margin: 150px 150px 0px 150px;
     }

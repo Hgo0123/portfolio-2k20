@@ -21,6 +21,9 @@
   .tache {
     position: absolute;
     left: 0px;
+    @include xx-small {
+      top: 70%;
+    }
   }
   &__title {
     grid-area: 1 / 1 / 2 / 2;
@@ -32,6 +35,7 @@
       grid-area: 1 / 1 / 2 / 3;
       align-self: end;
       justify-self: center;
+      z-index: 999;
     }
     font-family: "Cedarville Cursive", cursive;
     font-size: 42px;
