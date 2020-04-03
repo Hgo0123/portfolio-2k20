@@ -38,8 +38,7 @@
   .about {
     display: flex;
     justify-content: space-around;
-    .about--about,
-    .about--contact {
+    .about--about {
       padding-bottom: -20px;
       margin-right: 70px;
       display: inline-block;
@@ -56,15 +55,7 @@
       bottom: 3px;
       left: 25%;
       background-color: $primaryColor;
-    }
-    .about--contact::after {
-      content: "";
-      width: 50%;
-      height: 1px;
-      position: absolute;
-      bottom: 3px;
-      left: 25%;
-      background-color: $primaryColor;
+      transition: all 0.7s;
     }
     .about--about:hover {
       cursor: pointer;
