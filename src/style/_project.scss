@@ -108,7 +108,7 @@
         top: 90%;
         transform: translate(-50%, -50%);
         left: 50%;
-        font-size: 18px;
+        font-size: 16px;
         &::after {
           content: "";
           width: 70%;
@@ -281,6 +281,7 @@
     grid-template-rows: 100px repeat(2, 1fr);
     grid-gap: 20px;
   }
+
   &__title {
     grid-area: 1 / 1 / 2 / 2;
     font-family: "Press Start 2P", cursive;
@@ -357,7 +358,7 @@
         transform: translate(-50%, -50%);
         left: 50%;
         color: $primaryColor;
-        font-size: 18px;
+        font-size: 16px;
         &::after {
           content: "";
           width: 70%;
@@ -527,6 +528,7 @@
         transform: translate(-50%, -50%);
         left: 50%;
         color: $primaryColor;
+        font-size: 16px;
         &::after {
           content: "";
           width: 70%;

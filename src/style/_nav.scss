@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 3px;
   margin-top: 40px;
   height: 28px;
@@ -17,7 +17,7 @@
       margin-left: 0px;
     }
     font-family: "Montserrat", sans-serif;
-    font-size: 120%;
+    font-size: 24px;
     .name--anim {
       position: relative;
       width: 11em;
@@ -73,32 +73,3 @@
     }
   }
 }
-
-// .nav__vertical {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-around;
-//     font-size: 12px;
-//     font-family: "Montserrat", sans-serif;
-//     .nav__vertical--safe,
-//     .nav__vertical--beer,
-//     .nav__vertical--nespresso {
-//       position: absolute;
-//       transform: rotate(-90deg);
-//       padding: 5px;
-//     }
-//     .nav__vertical--safe:hover,
-//     .nav__vertical--beer:hover,
-//     .nav__vertical--nespresso:hover {
-//       cursor: pointer;
-//     }
-//     .nav__vertical--safe {
-//       top: 30%;
-//     }
-//     .nav__vertical--beer {
-//       top: 55%;
-//     }
-//     .nav__vertical--nespresso {
-//       top: 80%;
-//     }
-//   }
