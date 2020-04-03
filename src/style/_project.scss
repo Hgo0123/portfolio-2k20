@@ -58,21 +58,24 @@
       margin-top: 10%;
     }
     position: relative;
-    &:hover {
-      .image__img {
-        filter: blur(2px);
-      }
-      .image__details {
-        opacity: 1;
-        filter: none;
-        &::after {
-          content: "";
-          width: 70%;
-          height: 1px;
-          background-color: $primaryColor;
-          position: absolute;
-          bottom: -3px;
-          left: 15%;
+
+    @include largePlus {
+      &:hover {
+        .image__img {
+          filter: blur(2px);
+        }
+        .image__details {
+          opacity: 1;
+          filter: none;
+          &::after {
+            content: "";
+            width: 70%;
+            height: 1px;
+            background-color: $primaryColor;
+            position: absolute;
+            bottom: -3px;
+            left: 15%;
+          }
         }
       }
     }
@@ -84,6 +87,9 @@
       height: 100%;
       width: 100%;
       transition: filter 0.7s linear;
+      @include large {
+        position: relative;
+      }
     }
     .image__details {
       opacity: 0;
@@ -96,6 +102,23 @@
       color: $primaryColor;
       cursor: pointer;
       transition: opacity 0.7s;
+      @include large {
+        opacity: 1;
+        position: absolute;
+        top: 90%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        font-size: 18px;
+        &::after {
+          content: "";
+          width: 70%;
+          height: 1px;
+          background-color: $primaryColor;
+          position: absolute;
+          bottom: -3px;
+          left: 15%;
+        }
+      }
     }
   }
   &__text {
@@ -327,6 +350,24 @@
       color: white;
       cursor: pointer;
       transition: opacity 0.7s;
+      @include large {
+        opacity: 1;
+        position: absolute;
+        top: 90%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        color: $primaryColor;
+        font-size: 18px;
+        &::after {
+          content: "";
+          width: 70%;
+          height: 1px;
+          background-color: $primaryColor;
+          position: absolute;
+          bottom: -3px;
+          left: 15%;
+        }
+      }
     }
   }
   &__text {
@@ -479,6 +520,23 @@
       color: white;
       cursor: pointer;
       transition: opacity 0.7s;
+      @include large {
+        opacity: 1;
+        position: absolute;
+        top: 90%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        color: $primaryColor;
+        &::after {
+          content: "";
+          width: 70%;
+          height: 1px;
+          background-color: $primaryColor;
+          position: absolute;
+          bottom: -3px;
+          left: 15%;
+        }
+      }
     }
   }
   &__text {
