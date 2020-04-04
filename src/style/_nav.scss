@@ -8,6 +8,7 @@
   height: 28px;
   @include x-small {
     justify-content: space-around;
+    font-size: 18px;
   }
 
   .name {
@@ -18,9 +19,12 @@
     }
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
+    @include x-small {
+      font-size: 20px;
+    }
     .name--anim {
       position: relative;
-      width: 11em;
+      width: 10em;
       height: 32px;
       margin: 0 auto;
       border-right: 2px solid white;

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/reset.css" />
     <link rel="stylesheet" href="style/style.scss" />
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="asset/signe.png" />
+    <title>Portfolio | About</title>
   </head>
   <body class="about">
     <nav class="nav__horizontal">
@@ -20,7 +21,9 @@
     </nav>
     <section class="main">
       <div class="main__image">
-        <img src="/asset/photo_profil-large.png" alt="" />
+        <img src="/asset/photo_profil-large.png" 
+        srcset="/asset/photo_profil.png 400w"
+        alt="" />
       </div>
       <div class="main__text text">
         <div class="text__presentation">
@@ -46,15 +49,12 @@
       </div>
     </section>
     <footer class="social">
-      <!-- <img src="/asset/github.png" alt="github_logo" class="github__logo" />
-      <img
-        src="/asset/linkedin.png"
-        alt="linkedin_logo"
-        class="linkedin__logo"
-      /> -->
-      <p class="social__github">Github</p>
+      <a href="https://github.com/Hgo0123"
+        ><p class="social__github">Github</p></a
+      >
       <p>|</p>
-      <p class="social__linkedin">Linkedin</p>
+      <a href="https://www.linkedin.com/in/hugo-cordillot-633954123/"
+        ><p class="social__linkedin">Linkedin</p>
     </footer>
   </body>
 </html>

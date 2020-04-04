@@ -1,14 +1,35 @@
 .main {
   display: flex;
   margin: 100px 200px 0px 200px;
+  @include large {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+  }
+  @include medium {
+    height: 90vh;
+    margin: 0px 50px 0px 50px;
+  }
+  @include xx-small {
+    margin-top: 50px;
+  }
   &__image {
     margin-right: 50px;
+    @include medium {
+      margin-right: 0px;
+    }
   }
   &__text {
     text-align: justify;
     margin-left: 50px;
     line-height: 145%;
     font-size: 18px;
+    @include xx-small {
+      margin: 0px;
+      margin-top: 30px;
+      font-size: 16px;
+    }
   }
   .text__presentation {
     p {
@@ -18,6 +39,9 @@
   .text__contact {
     margin-top: 100px;
     display: flex;
+    @include medium {
+      margin-top: 50px;
+    }
     p:first-child {
       margin-right: 10px;
     }
@@ -39,5 +63,9 @@
   }
   .social__linkedin {
     margin-left: 10px;
+  }
+  @include xx-small {
+    position: relative;
+    padding-top: 30px;
   }
 }
