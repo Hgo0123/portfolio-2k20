@@ -18,6 +18,12 @@
     margin-right: 50px;
     @include medium {
       margin-right: 0px;
+      @include small {
+        img {
+          width: 234px;
+          height: 232px;
+        }
+      }
     }
   }
   &__text {
@@ -64,7 +70,7 @@
   .social__linkedin {
     margin-left: 10px;
   }
-  @include xx-small {
+  @include large {
     position: relative;
     padding-top: 30px;
   }
