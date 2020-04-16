@@ -188,6 +188,10 @@
     }
   }
 }
+.folio--lumino {
+  padding-bottom: 60px;
+}
+
 .folio {
   background-color: #ebf0ff;
   margin-top: 100px;
@@ -218,6 +222,9 @@
         align-self: flex-end;
       }
       .square--bof {
+        background-color: rgba(250, 182, 16, 0.9);
+      }
+      .square--lumino {
         background-color: rgba(250, 182, 16, 0.9);
       }
       .cross {
@@ -431,7 +438,8 @@
 
 // Safe patch
 
-.safepatch {
+.safepatch,
+.lumino {
   display: grid;
   grid-template-columns: 50% 30% 1fr;
   grid-template-rows: 100px repeat(2, 1fr);
@@ -464,9 +472,6 @@
     }
     .title__cross {
       color: #1a73e8;
-      margin-left: 10px;
-    }
-    img {
       margin-left: 10px;
     }
   }
@@ -503,6 +508,15 @@
     }
     .image__img {
       background-image: url("../asset/safe_patch/Laptop.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 50%;
+      height: 100%;
+      width: 100%;
+      transition: filter 0.5s linear;
+    }
+    .image__img--lumino {
+      background-image: url("../asset/lumino/laptop_lumino.png");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: 50%;
@@ -565,6 +579,25 @@
     p,
     h4 {
       margin-bottom: 15px;
+    }
+  }
+  &__movies {
+    grid-area: 3 / 3 / 4 / 4;
+    @include x-small {
+      grid-area: 3 / 1 / 4 / 2;
+      align-self: center;
+      justify-self: center;
+      margin-top: 0px;
+    }
+    @include xx-small {
+      grid-area: 3 / 2 / 4 / 3;
+      align-self: flex-end;
+    }
+    img {
+      max-width: 100%;
+      @include xx-small {
+        display: none;
+      }
     }
   }
 }
