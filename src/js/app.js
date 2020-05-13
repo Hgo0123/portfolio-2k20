@@ -19,10 +19,3 @@ window.addEventListener("scroll", function () {
   pres.style.transform = `rotate(${window.pageYOffset * coef}deg)`;
   pres.style.opacity = coefop - window.pageYOffset + "%";
 });
-
-$(document).ready(function () {
-  $(".content").css("display", "none");
-  $("#load").fadeOut(2000, function () {
-    $(".content").fadeIn(1000);
-  });
-});
